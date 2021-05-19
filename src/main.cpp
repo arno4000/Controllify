@@ -64,6 +64,7 @@ void setup()
   tft.fillScreen(TFT_BLACK);
   TJpgDec.setCallback(tft_output);
   TJpgDec.setJpgScale(2);
+  TJpgDec.setSwapBytes(true);
   wifiSecure.setCACert(spotify_server_cert);
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   // buttonR.setClickHandler(nextTrack);
